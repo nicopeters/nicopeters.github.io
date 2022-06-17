@@ -25,7 +25,28 @@
 			</div>
 			<div>
 				<h1>Hi there!</h1>
-
+                <p>
+                    Too much text below? You just want to donate some money for a good cause? Then click on "Donate":
+                    <div id="donate-button-container">
+  <div id="donate-button"></div>
+  <script
+    src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js"
+    charset="UTF-8"
+  ></script>
+  <script>
+    PayPal.Donation.Button({
+      env: 'production',
+      hosted_button_id: 'FHHST6NWL4JWS',
+      image: {
+        src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif',
+        alt: 'Donate with PayPal button',
+        title: 'PayPal - The safer, easier way to pay online!',
+      },
+    }).render('#donate-button');
+  </script>
+</div>
+			</div>
+                </p>
                 <p>You are invited to "Die wilde 13" party to celebrate the last 13 years of Signavio - hosted by Gero, Gerrit, Nico, Torben and Willi.<br>
                 We will spend a crazy day together with lots of activities, shows, music acts, drinks and food.<br>
                     And for you, everything is for free.<br>
